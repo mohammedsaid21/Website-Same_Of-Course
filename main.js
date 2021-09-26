@@ -1,5 +1,3 @@
-
-
 let pervScroll = window.pageYOffset;
 // Section When I  Scroll 
 let mySkills = document.querySelector('.skills')
@@ -35,14 +33,13 @@ let mySkills = document.querySelector('.skills')
 }
 
 
-let cardVeiw = document.querySelectorAll('.main-divaider .imgG img')
 
+let cardVeiw = document.querySelectorAll('.main-divaider .imgG img')
 let imges = document.getElementById('asdasd')
 
-// let galleryImg = document.querySelectorAll('.img-container img')
 let popupBox 
-cardVeiw.forEach((img , index) => {
-    img.onclick = function(e){
+cardVeiw.forEach(img => {
+    img.onclick = function(){
     // // Create The Popup Div 
         popupBox = document.createElement('div');
         popupBox.setAttribute('class' , 'popup-box')
@@ -52,41 +49,13 @@ cardVeiw.forEach((img , index) => {
         
         popupBox.appendChild(popupImg)
 
-        popupImg.src = img.src
-
-        let arrayimg = ['https://www.w3schools.com/']
-        // popupImg.src = 'img/Screenshot 2021-07-12 at 15-58-13 Document - Copy.jpg'
-        // open(popupImg.src)
-        if(index == 0){
-            open('https://mohammedsaid21.github.io/Website-Html-Css-and-JavaScript-/')
-        }
-        if(index == 1){
-            open('https://mohammedsaid21.github.io/Some-Creatvie-WebSite-a-party/')
-        }
-        if(index == 2){
-            console.log('index ' + index)
-        }
-        if(index == 3){
-            open('https://mohammedsaid21.github.io/mohammed-Small-Por/')
-        }        
-        if(index == 4){
-            open('img/New folder/Screenshot 2021-08-30 at 23-55-13 Templent Two El-Zero.png')
-            open('img/New folder/Screenshot 2021-08-30 at 23-55-23 Features.png')
-            open('img/New folder/Screenshot 2021-08-30 at 23-55-28 Docs.png.png')
-            
-        }
-        if(index == 5){
-            open(img.src)
-        }
-
-
-
-        // if(popupImg.src == img.src){
-        //     open('https://www.google.com')
-        // }
+        open('')
 
     }
 });
-// let array
 
+let button1 = document.querySelector('.Cv')
 
+button1.onclick = function(){
+
+}
